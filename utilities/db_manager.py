@@ -67,7 +67,7 @@ class DBManager(object):
         Writes Pandas Dataframe to Table in DB
 
         Keyword Args:
-            user_fast: A parameter whether to use a "faster" write from Pandas to SQL. Usually, this should be set to
+            use_fast: A parameter whether to use a "faster" write from Pandas to SQL. Usually, this should be set to
                        True. In some cases, there are currently some bugs with writing if columns contain commas.
                        In that case, set to False, and will use the regular Pandas write to SQL (with a monkey-patch)
         """
